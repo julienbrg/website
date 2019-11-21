@@ -181,10 +181,10 @@ class RootIndex extends React.Component {
           </div>
         </section>
 
-        <section className="ca_home_contancts">
+        <section className="m-5">
           <div className="container">
             <div
-              className="row p-3 m-2"
+              className="row p-3 "
               style={{
                 background:
                   "linear-gradient(111.31deg, #4D00B4 19.55%, #6500B4 40.51%)",
@@ -192,32 +192,45 @@ class RootIndex extends React.Component {
                 alignItems: "center"
               }}
             >
-              <div className="col-2 p-2">
-                <img src="/img/stake_icon.svg" />
+              <div className="col-1 ">
+                <img src="/img/stake_icon.svg" style={{ height: "6vmax" }} />
               </div>
-              <div className="col-8 p-2">
-                {" "}
-                <h1
-                  style={{
-                    fontSize: "2vmax",
-                    lineHeight: "normal",
-                    marginBottom: "0",
-                    textOverflow: "clip"
-                  }}
-                >
-                  If you are interested in acquiring PNK token OTC, get in touch
-                </h1>
-                <p style={{ fontSize: "1vmax", color: "white" }}>
-                  Note that in order to ensure fairness in token distribution,
-                  tokens are sold to buyers at prices reflected by the market.
-                </p>
+              <div className="offset-1 col-8  col-sm-auto">
+                <div className="row">
+                  <div className="col">
+                    {" "}
+                    <h1
+                      style={{
+                        fontSize: "2vmax",
+                        lineHeight: "normal",
+                        marginBottom: "0",
+                        textOverflow: "clip"
+                      }}
+                    >
+                      If you are interested in acquiring PNK token OTC, get in
+                      touch
+                    </h1>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col">
+                    <p
+                      className="d-none d-md-block"
+                      style={{ fontSize: "1vmax", color: "white" }}
+                    >
+                      Note that in order to ensure fairness in token
+                      distribution, tokens are sold to buyers at prices
+                      reflected by the market.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="col-2 p-2">
+              <div className="col-2 d-none d-md-block">
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfQwhyI_IqerENalCO9GODaGQHeILproSkWkPcbv0hsSgXg4Q/viewform"
                   className="btn btn-lg btn-primary btn-lg"
                 >
-                  Get in touch here
+                  <span style={{ fontSize: "1vmax" }}>Get in touch here</span>
                 </a>
               </div>
             </div>
