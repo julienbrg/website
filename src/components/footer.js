@@ -41,9 +41,9 @@ export default injectIntl(function({ menu, onCloseModal, onOpenModal, open }) {
             <nav className="ca_left">
               <ul>
                 <li key={0}>
-                  <a href="/about">
+                  <Link to="/about">
                     <FormattedMessage id="footer.about" />
-                  </a>
+                  </Link>
                 </li>
                 <li key={1}>
                   <a href="https://governance.kleros.io">
@@ -51,19 +51,19 @@ export default injectIntl(function({ menu, onCloseModal, onOpenModal, open }) {
                   </a>
                 </li>
                 <li key={2}>
-                  <a href="/about#join">
+                  <Link to="/about#join">
                     <FormattedMessage id="footer.join" />
-                  </a>
+                  </Link>
                 </li>
                 <li key={3}>
-                  <a href="/faq">
+                  <Link to="/faq">
                     <FormattedMessage id="footer.faq" />
-                  </a>
+                  </Link>
                 </li>
                 <li key={4}>
-                  <a href="/media">
+                  <Link to="/media">
                     <FormattedMessage id="footer.media" />
-                  </a>
+                  </Link>
                 </li>
                 <li key={5}>
                   <a href="https://blog.kleros.io">
@@ -71,10 +71,9 @@ export default injectIntl(function({ menu, onCloseModal, onOpenModal, open }) {
                   </a>
                 </li>
                 <li key={6}>
-                  <a href="/assets">
-                    {" "}
+                  <Link to="/assets">
                     <FormattedMessage id="footer.assets" />
-                  </a>
+                  </Link>
                 </li>
                 <li key={7}>
                   <a href="/whitepaper_en.pdf">
@@ -89,40 +88,50 @@ export default injectIntl(function({ menu, onCloseModal, onOpenModal, open }) {
             <nav className="ca_right">
               <ul>
                 <li key={0}>
-                  <a href="/escrow">
-                    {" "}
+                  <Link to="/escrow">
                     <FormattedMessage id="footer.escrow" />
-                  </a>
+                  </Link>
                 </li>
                 <li key={1}>
-                  <a href="/curated-list">
-                    {" "}
+                  <Link to="/curated-list">
                     <FormattedMessage id="footer.curated-list" />
-                  </a>
+                  </Link>
                 </li>
                 <li key={2}>
                   <a href="/oracle">
                     {" "}
                     <FormattedMessage id="footer.oracle" />
                   </a>
+                  <Link to="/oracle">
+                    <FormattedMessage id="footer.oracle" />
+                  </Link>
                 </li>
                 <li key={3}>
                   <a href="/cooperative">
                     {" "}
                     <FormattedMessage id="footer.cooperative" />
                   </a>
+                  <Link to="/cooperative">
+                    <FormattedMessage id="footer.cooperative" />
+                  </Link>
                 </li>
                 <li key={4}>
                   <a href="/court-tour">
                     {" "}
                     <FormattedMessage id="footer.court-tour" />
                   </a>
+                  <Link to="/court-tour">
+                    <FormattedMessage id="footer.court-tour" />
+                  </Link>
                 </li>
                 <li key={5}>
                   <a href="/token">
                     {" "}
                     <FormattedMessage id="footer.token" />
                   </a>
+                  <Link to="/token">
+                    <FormattedMessage id="footer.token" />
+                  </Link>
                 </li>
                 <li key={6}>
                   <a href="https://developer.kleros.io">
